@@ -1,0 +1,6 @@
+2021-12-07 12:00:25 DEBUG EvenOddChecker:9 - Checking the number: 4
+2021-12-07 12:00:25 DEBUG EvenOddChecker:12 - 4 is Even
+2021-12-07 12:00:25 DEBUG EvenOddChecker:9 - Checking the number: 5
+2021-12-07 12:00:25 INFO  EvenOddChecker:16 - 5 is Odd
+2021-12-07 12:00:25 DEBUG EvenOddChecker:9 - Checking the number: 6
+2021-12-07 12:00:25 DEBUG EvenOddChecker:12 - 6 is Even

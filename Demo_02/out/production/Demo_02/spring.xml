@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="pointA" class="com.dbs.beans.Point">
+        <property name="x" value="10"/>
+        <property name="y" value="16"/>
+    </bean>
+    <bean id="pointB" class="com.dbs.beans.Point">
+        <property name="x" value="12"/>
+        <property name="y" value="18"/>
+    </bean>
+    <bean id="pointC" class="com.dbs.beans.Point">
+        <property name="x" value="14"/>
+        <property name="y" value="10"/>
+    </bean>
+
+    <bean id="triangle" class="com.dbs.beans.Triangle" autowire="byName"/>
+<!--    <bean id="triangle" class="com.dbs.beans.Triangle" autowire="byType"/>-->
+
+<!--    <bean id="triangle" class="com.dbs.beans.Triangle">-->
+<!--        <property name="pointA" ref="pointA"/>-->
+<!--        <property name="pointB" ref="pointB"/>-->
+<!--        <property name="pointC" ref="pointC"/>-->
+<!--    </bean>-->
+<!--    <bean id="triangle" class="com.dbs.beans.Triangle">-->
+<!--        <constructor-arg name="pointA" ref="pointA"/>-->
+<!--        <constructor-arg name="pointB" ref="pointB"/>-->
+<!--        <constructor-arg name="pointC" ref="pointC"/>-->
+<!--    </bean>-->
+
+
+
+</beans>

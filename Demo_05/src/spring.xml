@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="collectionsDemo" class="com.dbs.beans.CollectionsDemo">
+        <property name="books">
+            <list>
+                <value>JAVA Reference</value>
+                <value>Spring Guide</value>
+                <value>DBMS Reference</value>
+            </list>
+        </property>
+
+        <property name="emails">
+            <set>
+                <value>ksr1234@gmail.com</value>
+                <value>xyz@gmail.com</value>
+                <value>abcd@gmail.com</value>
+                <value>xyz@gmail.com</value>
+            </set>
+        </property>
+
+        <property name="empData">
+            <map>
+                <entry key="101" value="Rajesh"/>
+                <entry key="102" value="Sowmya"/>
+                <entry key="103" value="Krishna"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
